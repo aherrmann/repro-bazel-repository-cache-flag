@@ -1,0 +1,6 @@
+genrule(
+    name = "bazel_sha256",
+    srcs = ["@bazel_sha256//file"],
+    outs = ["bazel.sha256"],
+    cmd = "cp $(SRCS) $(OUTS)",
+)
